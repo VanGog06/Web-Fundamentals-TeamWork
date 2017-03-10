@@ -1,0 +1,32 @@
+﻿TeamWork
+
+лого - снимка на кълбо (Niki)
+заглавие - options - SoftUni + (crystal ball gazer, spiritualist, prophet)
+
+Header - menu + logo
+Footer - social network icons
+
+Go up arrow
+
+unicorn - header font ( http://www.dafont.com/search.php?q=unicorn )
+raleway - content font ( https://fonts.google.com/specimen/Raleway )
+
+Use bootstap for grid only
+
+Testimonials - we can use softuni people's pictures
+
+Menu:
+	1. Home - (Georgi)
+	2. History - (Niki)
+	3. Contact us + Form - (Ani) + опция за чат
+	4. Fortune Tellers + опция за история при клик - (Georgi)
+	5. Testimonials - (Niki)
+	6. Horoschope - (Ani)
+
+
+
+
+
+
+	
+
