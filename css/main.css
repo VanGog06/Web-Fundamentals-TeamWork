@@ -1,0 +1,39 @@
+/*============ IMPORTS ============*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*============ GENERAL ============*/
+body{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*============ HEADER ============*/
+.main-header{
+    background: lightblue;
+}
+/*============ MAIN ============*/
+main > section{
+    background: navajowhite;
+    min-height: 250px;
+    border-bottom: 1px solid saddlebrown;
+}
+main > section h1{
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/**============ HOME ============**/
+
+/**============ HISTORY ============**/
+
+/**============ FORTUNE-TELLER ============**/
+
+/**============ HOROSCOPE ============**/
+
+/**============ TESTIMONIALS ============**/
+
+/**============ CONTACT ============**/
+
+/*============ FOOTER ============*/
