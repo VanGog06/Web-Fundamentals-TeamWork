@@ -16,7 +16,7 @@ body {
 
 /*============ HEADER ============*/
 
-.main-header div {
+.main-header .background {
     background: url('../img/fortune-nakov.png') no-repeat;
     background-size: contain;
     width: 100%;
