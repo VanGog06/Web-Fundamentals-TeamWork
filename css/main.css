@@ -1,5 +1,4 @@
 /*============ IMPORTS ============*/
-
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
@@ -68,12 +67,13 @@ body {
 
 /*============ MAIN ============*/
 
-main > section{
+main > section {
     background: navajowhite;
     min-height: 250px;
     border-bottom: 1px solid saddlebrown;
 }
-main > section h1{
+
+main > section h1 {
     margin: 0;
     padding-top: 20px;
     text-align: center;
@@ -88,6 +88,108 @@ main > section h1{
 /**============ HOROSCOPE ============**/
 
 /**============ TESTIMONIALS ============**/
+
+#testimonials {
+    position: relative;
+}
+
+.client-controls {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    font-size: 4em;
+}
+
+.client-controls a {
+    color: rgba(0, 0, 0, .6);
+}
+
+.client-controls .client-controls-next {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+}
+
+.client-controls .client-controls-prev {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+}
+
+.clients-carousel {
+    max-width: 100%;
+    min-height: 350px;
+    position: relative;
+}
+
+.clients-carousel .client-unit {
+    display: none;
+    background: white;
+    max-width: 700px;
+    box-sizing: border-box;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 50%;
+    padding: 35px;
+    margin: 60px 0 0 -350px;
+    z-index: 2;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .6);
+}
+.clients-carousel .client-unit .client-review{
+    width: 50%;
+}
+.clients-carousel .client-unit .client-profile {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.clients-carousel .client-unit .client-profile h4,
+.clients-carousel .client-unit .client-profile small {
+    margin: 0;
+}
+
+.clients-carousel .client-unit img {
+    border-radius: 50%;
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+.clients-carousel .client-unit .client-review p:first-line{
+    font-weight: bold;
+}
+
+.clients-carousel .client-unit.active-client {
+    display: flex;
+}
+
+@media screen and (max-width: 750px) {
+    #testimonials{
+        padding: 20px;
+    }
+    .clients-carousel{
+        min-height: 450px;
+    }
+    .client-controls {
+        position: relative;
+    }
+
+    .clients-carousel .client-unit {
+        width: 100%;
+        left: 0;
+        margin: 80px 0;
+    }
+    .clients-carousel .client-unit .client-review{
+        width: 100%;
+    }
+
+    .clients-carousel .client-unit.active-client {
+        flex-wrap: wrap;
+    }
+}
 
 /**============ CONTACT ============**/
 
