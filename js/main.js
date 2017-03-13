@@ -19,12 +19,14 @@ function clientsCarousel() {
             if (position < length - 1) {
                 $currentUnit.removeClass("active-client").next().addClass("active-client");
             } else {
-                $currentUnit.removeClass("active-client").first().addClass("active-client");
+                $currentUnit.removeClass("active-client");
+                $clientUnit.first().addClass("active-client");
             }
 
         } else {
             if (position === 0) {
-                $currentUnit.removeClass("active-client").last().addClass("active-client");
+                $currentUnit.removeClass("active-client");
+                $clientUnit.last().addClass("active-client");
             } else {
                 $currentUnit.removeClass("active-client").prev().addClass("active-client");
             }
