@@ -1,7 +1,23 @@
 $(document).ready(function () {
     clientsCarousel();
     hamburgerMenu();
+    smoothScroll();
 });
+
+function smoothScroll() {
+    $("nav.menu li a").on("click", function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            let hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+}
 
 function clientsCarousel() {
     let $clientsCarousel = $(".clients-carousel");
@@ -36,7 +52,7 @@ function clientsCarousel() {
 }
 
 function hamburgerMenu() {
-    $('.hamburger-menu i').click(function() {
+    $('.hamburger-menu i').click(function () {
         $('.menu ul').toggleClass('hidden');
     });
 }
