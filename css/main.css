@@ -228,6 +228,11 @@ main > section h1 {
 .ai.comet:before {
     content:"\2604"
 }
+@media screen and(max-width: 660px){
+    .zodiac>ul>li {
+        display: block;
+    }
+}
 
 /**============ TESTIMONIALS ============**/
 
