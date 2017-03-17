@@ -87,7 +87,7 @@ main > section h1 {
 
 /**============ HOROSCOPE ============**/
 
-.zodiac>li {
+section.horoscope>ul>li {
     list-style-type: none;
     width: 230px;
     display: inline-block;
@@ -98,15 +98,15 @@ main > section h1 {
     margin-top: 10px;
     margin-left: 30px;
 }
-.zodiac>li>p {
+section.horoscope>ul>li>p {
     font-size: small;
     padding: 10px;
 }
-.zodiac>li>h3 {
+section.horoscopeli>ul>lih3 {
     font-size: 15px;
     color: lightslategrey;
 }
-.zodiac>li>h2 {
+section.horoscope>ul>li>h2 {
     padding: 0 10px;
     text-align: center;
 
