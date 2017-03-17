@@ -1,3 +1,9 @@
+/*
+------ Color Reference -------
+background: #173e43
+heading: #fae596
+
+*/
 /*============ IMPORTS ============*/
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -26,15 +32,33 @@ body {
 .main-header h1 {
     margin: 0;
 }
-
+/** ======== Logo ======= **/
 .main-header .logo {
-    color: #fff;
+    color: #878787;
     float: left;
-    padding-top: 10px;
-    padding-left: 50px;
-    font-size: 4em;
+    height: 80px;
+    width: 400px;
+    background: url('../img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease;
 }
-
+.main-header .logo:hover{
+    opacity: .8;
+}
+.main-header .logo h1 img{
+    height: 50px;
+    float: left;
+}
+.main-header .logo h1{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+/** ======== Navigation ======= **/
 .menu {
     float: right;
     padding-top: 20px;
@@ -79,10 +103,11 @@ main > section h1 {
     text-align: center;
 }
 
-/**============ HOME ============**/
-
 /**============ HISTORY ============**/
-
+#history{
+    color: #173e43;
+    background: #dddfd4;
+}
 /**============ FORTUNE-TELLER ============**/
 
 /**============ HOROSCOPE ============**/
@@ -91,8 +116,13 @@ main > section h1 {
 
 #testimonials {
     position: relative;
+    background: #dddfd4;
 }
-
+#testimonials h1 small{
+    display: block;
+    font-size: .5em;
+    margin-top: 5px;
+}
 .client-controls {
     position: absolute;
     width: 100%;
@@ -103,7 +133,7 @@ main > section h1 {
 }
 
 .client-controls a {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0,0,0,.6);
 }
 
 .client-controls .client-controls-next {
@@ -194,7 +224,30 @@ main > section h1 {
 /**============ CONTACT ============**/
 
 /*============ FOOTER ============*/
-
+.main-footer{
+    background: #f82722;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-footer .footer-text{
+    font-size: 1.2em;
+}
+.main-footer .footer-social ul{
+    list-style: none;
+}
+.main-footer .footer-social ul li{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.main-footer .footer-social ul li:hover{
+    opacity: .6;
+}
 /*============ MEDIA QUERIES ============*/
 
 @media screen and (max-width: 1350px) {
