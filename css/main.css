@@ -87,6 +87,148 @@ main > section h1 {
 
 /**============ HOROSCOPE ============**/
 
+div.horoscope>li {
+    list-style-type: none;
+    width: 230px;
+    display: inline-block;
+    height: 250px;
+    vertical-align: top;
+    box-shadow: 3px 5px 15px #888888;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+div.horoscope>li>p {
+    font-size: small;
+    padding: 10px;
+}
+div.horoscope>li>h3 {
+    font-size: 15px;
+    color: lightslategrey;
+}
+div.horoscope>li>h2 {
+    padding: 0 10px;
+    text-align: center;
+
+}
+.ai {
+    font-style:normal;
+    color:purple;
+    font-weight:bold;
+    font-size:24px;
+    line-height:24px;
+    float: left;
+    padding: 10px;
+}
+.ai.aries:before {
+    content:"\2648";
+}
+.ai.taurus:before {
+    content:"\2649";
+}
+.ai.gemini:before {
+    content:"\264A";
+}
+.ai.cancer:before {
+    content:"\264B";
+}
+.ai.leo:before {
+    content:"\264C";
+}
+.ai.virgo:before {
+    content:"\264D";
+}
+.ai.libra:before {
+    content:"\264E";
+}
+.ai.scorpio:before {
+    content:"\264F";
+}
+.ai.sagittarius:before {
+    content:"\2650";
+}
+.ai.capricorn:before {
+    content:"\2651";
+}
+.ai.aquarius:before {
+    content:"\2652";
+}
+.ai.pisces:before {
+    content:"\2653";
+}
+.ai.sun:before {
+    content:"\2609";
+}
+.ai.moon:before {
+    content:"\263D";
+}
+.ai.earth:before {
+    content:"\2295";
+}
+.ai.mercury:before {
+    content:"\263F";
+}
+.ai.venus:before {
+    content:"\2640";
+}
+.ai.mars:before {
+    content:"\2642";
+}
+.ai.jupiter:before {
+    content:"\2643";
+}
+.ai.saturn:before {
+    content:"\2644";
+}
+.ai.uranus:before {
+    content:"\2645";
+}
+.ai.neptune:before {
+    content:"\2646";
+}
+.ai.pluto:before {
+    content:"\2647";
+}
+.ai.north-node:before {
+    content:"\260A";
+}
+.ai.south-node:before {
+    content:"\260B";
+}
+.ai.part-of-fortune:before {
+    content:"\2297"
+}
+.ai.ceres:before {
+    content:"\02A1"
+}
+.ai.conjunction:before {
+    content:"\260C"
+}
+.ai.square:before {
+    content:"\25A1"
+}
+.ai.trine:before {
+    content:"\25B3"
+}
+.ai.opposition:before {
+    content:"\260D"
+}
+.ai.semisquare:before {
+    content:"\2220"
+}
+.ai.quintile:before {
+    content:"\0051"
+}
+.ai.biquintile:before {
+    content:"\0062\0051"
+}
+.ai.retrograde:before {
+    content:"\211E"
+}
+.ai.comet:before {
+    content:"\2604"
+}
+
 /**============ TESTIMONIALS ============**/
 
 #testimonials {
