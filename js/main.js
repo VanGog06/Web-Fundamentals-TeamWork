@@ -1,5 +1,6 @@
 $(document).ready(function () {
     clientsCarousel();
+    hamburgerMenu();
 });
 
 function clientsCarousel() {
@@ -31,5 +32,11 @@ function clientsCarousel() {
                 $currentUnit.removeClass("active-client").prev().addClass("active-client");
             }
         }
+    });
+}
+
+function hamburgerMenu() {
+    $('.hamburger-menu i').click(function() {
+        $('.menu ul').toggleClass('hidden');
     });
 }

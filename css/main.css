@@ -15,7 +15,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.minimenu {
+.minimenu, .hamburger-menu {
     display: none;
 }
 
@@ -109,8 +109,239 @@ main > section h1 {
     background: #dddfd4;
 }
 /**============ FORTUNE-TELLER ============**/
+#fortune-teller {
+    padding-bottom: 50px;
+}
+
+#fortune-teller h1 {
+    margin-bottom: 40px;
+}
+
+.tellers {
+    text-align: center;
+}
+
+.tellers .mag-nakov {
+    width: 50%;
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.tellers .mag-nakov img {
+    width: 50%;
+    float: left;
+    max-width: 100%;
+    min-height: 275px;
+}
+
+.tellers .mag-nakov h2 {
+    font-size: 1.8em;
+    margin: 2% 0 1% 0;
+    letter-spacing: 4px;
+}
+
+.tellers .mag-nakov p {
+    width: 45%;
+    float: right;
+    text-align: justify;
+    padding: 0 2%;
+    line-height: 21px;
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.tellers section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tellers section article {
+    width: 28%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1%;
+    background: #fff;
+    height: 505px;
+    margin: 0 2%;
+}
+
+.tellers section img {
+    width: 100%;
+    height: 300px;
+}
+
+.tellers section h2 {
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+.tellers section p {
+    font-size: 1vw;
+    text-align: justify;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.tellers .mag-nakov:hover, .tellers section article:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
 
 /**============ HOROSCOPE ============**/
+
+.zodiac>ul>li {
+    list-style-type: none;
+    width: 230px;
+    display: inline-block;
+    height: 250px;
+    vertical-align: top;
+    box-shadow: 3px 5px 15px #888888;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.zodiac>ul>li>p {
+    font-size: small;
+    padding: 10px;
+}
+.zodiac>ul>li h3 {
+    font-size: 15px;
+    color: lightslategrey;
+}
+.zodiac>ul>li>h2 {
+    padding: 0 10px;
+    text-align: center;
+
+}
+.ai {
+    font-style:normal;
+    color:purple;
+    font-weight:bold;
+    font-size:24px;
+    line-height:24px;
+    float: left;
+    padding: 10px;
+}
+.ai.aries:before {
+    content:"\2648";
+}
+.ai.taurus:before {
+    content:"\2649";
+}
+.ai.gemini:before {
+    content:"\264A";
+}
+.ai.cancer:before {
+    content:"\264B";
+}
+.ai.leo:before {
+    content:"\264C";
+}
+.ai.virgo:before {
+    content:"\264D";
+}
+.ai.libra:before {
+    content:"\264E";
+}
+.ai.scorpio:before {
+    content:"\264F";
+}
+.ai.sagittarius:before {
+    content:"\2650";
+}
+.ai.capricorn:before {
+    content:"\2651";
+}
+.ai.aquarius:before {
+    content:"\2652";
+}
+.ai.pisces:before {
+    content:"\2653";
+}
+.ai.sun:before {
+    content:"\2609";
+}
+.ai.moon:before {
+    content:"\263D";
+}
+.ai.earth:before {
+    content:"\2295";
+}
+.ai.mercury:before {
+    content:"\263F";
+}
+.ai.venus:before {
+    content:"\2640";
+}
+.ai.mars:before {
+    content:"\2642";
+}
+.ai.jupiter:before {
+    content:"\2643";
+}
+.ai.saturn:before {
+    content:"\2644";
+}
+.ai.uranus:before {
+    content:"\2645";
+}
+.ai.neptune:before {
+    content:"\2646";
+}
+.ai.pluto:before {
+    content:"\2647";
+}
+.ai.north-node:before {
+    content:"\260A";
+}
+.ai.south-node:before {
+    content:"\260B";
+}
+.ai.part-of-fortune:before {
+    content:"\2297"
+}
+.ai.ceres:before {
+    content:"\02A1"
+}
+.ai.conjunction:before {
+    content:"\260C"
+}
+.ai.square:before {
+    content:"\25A1"
+}
+.ai.trine:before {
+    content:"\25B3"
+}
+.ai.opposition:before {
+    content:"\260D"
+}
+.ai.semisquare:before {
+    content:"\2220"
+}
+.ai.quintile:before {
+    content:"\0051"
+}
+.ai.biquintile:before {
+    content:"\0062\0051"
+}
+.ai.retrograde:before {
+    content:"\211E"
+}
+.ai.comet:before {
+    content:"\2604"
+}
+@media screen and(max-width: 660px){
+    .zodiac>ul>li {
+        display: block;
+    }
+}
 
 /**============ TESTIMONIALS ============**/
 
@@ -294,5 +525,83 @@ main > section h1 {
         font-size: 1em;
         font-weight: bolder;
         text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-header {
+        position: relative;
+    }
+
+    .minimenu, .hidden {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu ul {
+        position: absolute;
+        left: 73%;
+        top: 10%;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 20px 10px;
+    }
+
+    .menu ul li a {
+        font-size: 1.5em;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+        position: absolute;
+        top: 4%;
+        left: 92%;
+        color: #fff;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+/*============ KEY FRAMES ============*/
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
     }
 }
