@@ -2,6 +2,7 @@ $(document).ready(function () {
     clientsCarousel();
     hamburgerMenu();
     smoothScroll();
+    showHideTellersDescription();
 });
 
 function smoothScroll() {
@@ -54,5 +55,12 @@ function clientsCarousel() {
 function hamburgerMenu() {
     $('.hamburger-menu i').click(function () {
         $('.menu ul').toggleClass('hidden');
+    });
+}
+
+function showHideTellersDescription() {
+    $(".tellers section article").hover(function() {
+        $(this).find('h2').toggle('slow');
+        $(this).find('p').toggle('slow');
     });
 }
