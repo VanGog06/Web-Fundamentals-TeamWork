@@ -532,7 +532,7 @@ main > section h1 {
     display: block;
     width: 450px;
 }
-section.dropdown>.mags>ul>li>a>img {
+.mags>ul>li>a>img {
     width: 20%;
     border-radius: 80px;
     float: left;
