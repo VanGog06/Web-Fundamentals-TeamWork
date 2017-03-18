@@ -56,7 +56,7 @@ function clientsCarousel() {
 
 function hamburgerMenu() {
     $('.hamburger-menu i').click(function () {
-        $('.menu ul').toggleClass('hidden');
+        $('.menu ul').toggle('slow');
     });
 }
 

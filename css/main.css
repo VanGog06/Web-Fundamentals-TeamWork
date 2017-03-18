@@ -15,7 +15,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.hamburger-menu {
+.hamburger-menu{
     display: none;
 }
 
@@ -619,23 +619,25 @@ main > section h1 {
         display: none;
     }
 
-    .menu {
+    .hamburger-menu {
         display: block;
     }
 
     .menu ul {
         position: absolute;
-        left: 73%;
-        top: 10%;
+        left: 53%;
+        top: 9%;
+        width: 40%;
     }
 
     .menu ul li {
         display: block;
-        margin: 20px 10px;
+        padding: 12px 0;
+        margin: 0 0 0 15px;
     }
 
     .menu ul li a {
-        font-size: 1.5em;
+        font-size: 1.8vw;
     }
 
     .hamburger-menu {
@@ -644,7 +646,11 @@ main > section h1 {
         top: 4%;
         left: 92%;
         color: #fff;
-        font-size: 3em;
+        font-size: 3vw;
+    }
+
+    .hamburger-menu:hover {
+        cursor: pointer;
     }
 }
 
@@ -652,11 +658,19 @@ main > section h1 {
     .main-header {
         height: 680px;
     }
+
+    .menu ul {
+        top: 8%;
+    }
 }
 
 @media screen and (max-width: 960px) {
     .main-header {
         height: 640px;
+    }
+
+    .menu ul {
+        top: 7%;
     }
 }
 
@@ -664,11 +678,20 @@ main > section h1 {
     .main-header {
         height: 540px;
     }
+
+    .menu ul {
+        left: 53%;
+        top: 6%;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .main-header {
         height: 480px;
+    }
+
+    .menu ul {
+        top: 5%;
     }
 }
 
@@ -676,11 +699,28 @@ main > section h1 {
     .main-header {
         height: 380px;
     }
+
+    .menu ul {
+        top: 5%;
+    }
+
+    .menu ul li {
+        padding: 7px 0;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .main-header {
         height: 300px;
+    }
+
+    .menu ul {
+        left: 50%;
+        top: 4%;
+    }
+
+    .menu ul li {
+        padding: 5px 0;
     }
 }
 
