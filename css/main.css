@@ -196,7 +196,7 @@ main > section h1 {
 
 /**============ HOROSCOPE ============**/
 .zodiac {
-    margin: 0 10%;
+    margin: 0 auto;
 }
 .zodiac>ul {
     padding: 0;
