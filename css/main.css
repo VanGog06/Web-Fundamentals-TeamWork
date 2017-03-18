@@ -454,6 +454,85 @@ main > section h1 {
 
 /**============ CONTACT ============**/
 
+.mags {
+    background: #fff;
+    width: 500px;
+}
+.mags>h4 {
+    font-family: 'Raleway',sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    background: #a90329;
+}
+.mags>h4:hover {
+    background: #cc002c;
+}
+.mags>h4>a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    width: 200px;
+}
+
+.mags>ul {
+    background: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    height: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+
+    /*Animation*/
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+}
+.mags:hover>ul {
+    height: 150px;
+}
+
+.mags a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 200px;
+}
+/*li Styles*/
+.mags>ul>li {
+    list-style-type: none;
+    border-bottom: 1px solid #eee;
+}
+.mags>ul>li:hover {
+    background: none;
+}
+.mags>ul>li>a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 450px;
+}
+section.dropdown>.mags>ul>li>a>img {
+    width: 20%;
+    border-radius: 80px;
+    float: left;
+    margin: 10px;
+    border: 1px solid gold;
+}
+.mags>ul>li>button {
+    background-color: gold;
+    border-radius: 5px;
+    padding: 5px 20px;
+    border: double indigo;
+}
 /*============ FOOTER ============*/
 .main-footer{
     background: #f82722;
