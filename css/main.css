@@ -198,6 +198,9 @@ main > section h1 {
 .zodiac {
     margin: 0 10%;
 }
+.zodiac>ul {
+    padding: 0;
+}
 .zodiac>ul>li {
     list-style-type: none;
     width: 230px;
