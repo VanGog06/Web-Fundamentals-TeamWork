@@ -195,7 +195,9 @@ main > section h1 {
 }
 
 /**============ HOROSCOPE ============**/
-
+.zodiac {
+    margin: 0 10%;
+}
 .zodiac>ul>li {
     list-style-type: none;
     width: 230px;
