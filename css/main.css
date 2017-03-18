@@ -19,6 +19,10 @@ body {
     display: none;
 }
 
+.toggle-opacity {
+    opacity: 1 !important;
+}
+
 /*============ HEADER ============*/
 
 /*.main-header .background {*/
@@ -93,7 +97,7 @@ body {
 }
 
 .menu ul li a:hover {
-    color: #b38673;
+    opacity: .5;
 }
 
 /*============ MAIN ============*/
@@ -137,6 +141,7 @@ main > section h1 {
     box-sizing: border-box;
     padding: 0 1% 1% 1%;
     border-radius: 20px;
+    border: 3px solid #000;
 }
 
 .tellers article h1 {
@@ -153,6 +158,7 @@ main > section h1 {
     float: left;
     max-width: 100%;
     min-height: 275px;
+    opacity: .8;
 }
 
 .tellers .mag-nakov h2 {
@@ -186,11 +192,13 @@ main > section h1 {
     background: #fff;
     margin: 0 2%;
     border-radius: 20px;
+    border: 3px solid #000;
 }
 
 .tellers section img {
     width: 100%;
     height: 300px;
+    opacity: .8;
 }
 
 .tellers section h2 {
@@ -694,4 +702,27 @@ main > section h1 {
     40%, 60% {
         transform: translate3d(4px, 0, 0);
     }
+}
+
+/*============ SCROLL ANIMATION ============*/
+
+.animation-element {
+    opacity: 0;
+}
+
+.animation-element.slide-left {
+    opacity: 0;
+    transition: all 900ms linear;
+    transform: translate(-200px, 0);
+}
+
+.animation-element.slide-left.in-view {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.animation-element.slide-left.testimonial:hover {
+    position: relative;
+    transform: scale(1.1, 1.1);
+    z-index: 5;
 }
