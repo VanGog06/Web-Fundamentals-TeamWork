@@ -122,20 +122,67 @@ main > section h1 {
 /**============ HISTORY ============**/
 #history {
     color: #173e43;
-    background: #dddfd4;
+    background-image: url('../img/history-bg.jpg') ;
+    background-size: cover;
+    border-top: 5px solid maroon;
     font-size: 1.3rem;
     padding: 40px 0;
 }
-
+#history h1{
+    margin-bottom: 20px;
+}
 .story {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
+    background: #dddfd4;
+    border: 2px solid white;
+    padding: 20px 30px 40px 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 darkgrey;
+    position: relative;
+}
+.story-img{
+    overflow: hidden;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: -250px;
+    background: url("../img/nostradamus.jpg") no-repeat;
+    background-size: cover;
+    border: 5px solid darkgray;
+    z-index: 1;
+}
+.story-img .overlay{
+    opacity: 0;
+    background: rgba(0,0,0,.6);
+    color: white;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    transition: opacity .5s ease;
+}
+.story-img:hover .overlay{
+    opacity: 1;
+}
+.story-img .overlay p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.story-img .overlay p small{
+    display: block;
 }
 
 .story p > span {
     display: block;
-    margin: 10px 0 10px 20px;
+    margin: 20px 0 20px 20px;
     font-weight: bolder;
+    position: relative;
 }
 
 .call-to-action {
@@ -144,6 +191,7 @@ main > section h1 {
 
 .call-to-action h2 {
     margin-bottom: 40px;
+    font-size: 1.3rem;
 }
 
 .call-to-action h2 span {
@@ -155,22 +203,44 @@ main > section h1 {
     color: white;
     padding: 10px 35px 10px 35px;
     border-radius: 20px;
+    transition: all .5s ease;
 }
 
 .call-to-action .btn.sign-up {
-    background: #320107;
+    background: #980107;
+    box-shadow: 2px 2px 0 #320107;
 }
 
 .call-to-action .btn.learn-more {
     background: green;
+    box-shadow: 2px 2px 0 darkgreen;
 }
 
+.call-to-action .btn.sign-up:hover{
+    background: #630107;
+}
+.call-to-action .btn.learn-more:hover{
+    background: darkgreen;
+}
 @media screen and (max-width: 640px) {
-    .story{
+    #history{
+        font-size: 1.1rem;
+    }
+    .story {
         width: 80%;
     }
-    .call-to-action h2{
+
+    .call-to-action h2 {
         font-size: 1.1rem;
+    }
+
+    .call-to-action .btn {
+        display: block;
+        margin: 10px 0;
+    }
+    .story-img{
+        position: relative;
+        margin: 0 auto 10px auto;
     }
 }
 
