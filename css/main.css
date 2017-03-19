@@ -692,6 +692,7 @@ main > section h1 {
 }
 
 .mags > ul > li > button:hover {
+    color: white;
     width: 100px;
     height: 50px;
     background: #f82722;
