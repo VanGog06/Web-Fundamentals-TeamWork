@@ -5,7 +5,6 @@ $(document).ready(function () {
     showHideTellersDescription();
     scrollAnimation();
     changeNakovsOpacity();
-    loadNakovHead();
 });
 
 function smoothScroll() {
@@ -100,13 +99,4 @@ function scrollAnimation() {
 
     $window.on('scroll resize', check_if_in_view);
     $window.trigger('scroll');
-}
-
-function loadNakovHead() {
-    $('.main-header').load(function() {
-        $('.background').css({'animation': 'shake 1s cubic-bezier(.36, .07, .19, .97) both',
-            'transform': 'translate3d(0, 0, 0)',
-            'backface-visibility': 'hidden',
-            'perspective': '100px'});
-    });
 }
