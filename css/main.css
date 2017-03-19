@@ -99,10 +99,12 @@ body {
     font-size: 1.1vw;
     font-weight: bolder;
     text-transform: uppercase;
+    text-shadow: 2px 2px #000;
 }
 
 .menu ul li a:hover {
-    opacity: .5;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
 }
 
 /*============ MAIN ============*/
@@ -122,67 +124,20 @@ main > section h1 {
 /**============ HISTORY ============**/
 #history {
     color: #173e43;
-    background-image: url('../img/history-bg.jpg') ;
-    background-size: cover;
-    border-top: 5px solid maroon;
+    background: #dddfd4;
     font-size: 1.3rem;
     padding: 40px 0;
 }
-#history h1{
-    margin-bottom: 20px;
-}
+
 .story {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
-    background: #dddfd4;
-    border: 2px solid white;
-    padding: 20px 30px 40px 30px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 0 darkgrey;
-    position: relative;
-}
-.story-img{
-    overflow: hidden;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-left: -250px;
-    background: url("../img/nostradamus.jpg") no-repeat;
-    background-size: cover;
-    border: 5px solid darkgray;
-    z-index: 1;
-}
-.story-img .overlay{
-    opacity: 0;
-    background: rgba(0,0,0,.6);
-    color: white;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    transition: opacity .5s ease;
-}
-.story-img:hover .overlay{
-    opacity: 1;
-}
-.story-img .overlay p{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-.story-img .overlay p small{
-    display: block;
 }
 
 .story p > span {
     display: block;
-    margin: 20px 0 20px 20px;
+    margin: 10px 0 10px 20px;
     font-weight: bolder;
-    position: relative;
 }
 
 .call-to-action {
@@ -191,7 +146,6 @@ main > section h1 {
 
 .call-to-action h2 {
     margin-bottom: 40px;
-    font-size: 1.3rem;
 }
 
 .call-to-action h2 span {
@@ -203,44 +157,22 @@ main > section h1 {
     color: white;
     padding: 10px 35px 10px 35px;
     border-radius: 20px;
-    transition: all .5s ease;
 }
 
 .call-to-action .btn.sign-up {
-    background: #980107;
-    box-shadow: 2px 2px 0 #320107;
+    background: #320107;
 }
 
 .call-to-action .btn.learn-more {
     background: green;
-    box-shadow: 2px 2px 0 darkgreen;
 }
 
-.call-to-action .btn.sign-up:hover{
-    background: #630107;
-}
-.call-to-action .btn.learn-more:hover{
-    background: darkgreen;
-}
 @media screen and (max-width: 640px) {
-    #history{
-        font-size: 1.1rem;
-    }
-    .story {
+    .story{
         width: 80%;
     }
-
-    .call-to-action h2 {
+    .call-to-action h2{
         font-size: 1.1rem;
-    }
-
-    .call-to-action .btn {
-        display: block;
-        margin: 10px 0;
-    }
-    .story-img{
-        position: relative;
-        margin: 0 auto 10px auto;
     }
 }
 
@@ -248,10 +180,15 @@ main > section h1 {
 
 #fortune-teller {
     padding-bottom: 50px;
+    background: #fff;
 }
 
 #fortune-teller > h1 {
     margin-bottom: 50px;
+    font-size: 3vw;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #173e43;
 }
 
 .tellers {
@@ -267,6 +204,9 @@ main > section h1 {
     padding: 0 1% 1% 1%;
     border-radius: 20px;
     border: 3px solid #000;
+    background: url("../img/tellers/tellers-background.jpg") no-repeat;
+    background-size: cover;
+    box-shadow: 15px 15px 15px #000;
 }
 
 .tellers article h1 {
@@ -274,10 +214,13 @@ main > section h1 {
     padding: 20px 0;
     font-size: 2.2vw;
     text-decoration: underline;
+    font-style: italic;
+    text-shadow: 3px 3px 3px #000;
 }
 
 .tellers .mag-nakov h1 {
     width: 100%;
+    color: #fff;
 }
 
 .tellers .mag-nakov img {
@@ -292,6 +235,8 @@ main > section h1 {
     margin: 2% 0 1% 0;
     letter-spacing: 4px;
     font-size: 1.6vw;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
 }
 
 .tellers .mag-nakov p {
@@ -303,6 +248,8 @@ main > section h1 {
     margin: 5px 0;
     font-weight: bold;
     font-size: 1.1vw;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
 }
 
 .tellers section {
@@ -320,6 +267,9 @@ main > section h1 {
     margin: 0 2%;
     border-radius: 20px;
     border: 3px solid #000;
+    background: url("../img/tellers/tellers-background.jpg") no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 10px #000;
 }
 
 .tellers section img {
@@ -328,12 +278,18 @@ main > section h1 {
     opacity: .8;
 }
 
+.tellers section h1 {
+    color: #fff;
+}
+
 .tellers section h2 {
     margin: 4% 0 4% 0;
     letter-spacing: 4px;
     display: none;
     font-size: 1.5vw;
     text-decoration: underline;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
 }
 
 .tellers section article:first-of-type h2 {
@@ -346,6 +302,8 @@ main > section h1 {
     margin: 10px 0;
     font-weight: bold;
     display: none;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
 }
 
 .tellers .mag-nakov:hover,
@@ -865,6 +823,85 @@ main > section h1 {
     .menu ul {
         top: 8%;
     }
+
+    #fortune-teller {
+        padding-bottom: 0;
+    }
+
+    .tellers .mag-nakov {
+        width: 60%;
+    }
+
+    .tellers .mag-nakov h1 {
+        font-size: 2.5vw;
+    }
+
+    .tellers .mag-nakov h2 {
+        margin-top: 1%;
+        font-size: 1.8vw;
+        letter-spacing: 3px;
+    }
+
+    .tellers .mag-nakov p {
+        font-size: 1.5vw;
+        width: 50%;
+        font-weight: bold;
+        line-height: 18px;
+    }
+
+    .tellers .mag-nakov img {
+        opacity: 1;
+    }
+
+    .tellers section {
+        width: 100%;
+    }
+
+    .tellers section article {
+        width: 60%;
+        display: inline-block;
+        margin: 0 auto 50px auto;
+        box-sizing: border-box;
+    }
+
+    .tellers article h1 {
+        font-size: 2.5vw;
+        letter-spacing: 5px;
+    }
+
+    .tellers article img {
+        width: 50%;
+        float: left;
+        opacity: 1;
+    }
+
+    .tellers article h2, .tellers article p {
+        display: block !important;
+        float: right;
+        width: 50%;
+    }
+
+    .tellers section article h2 {
+        font-size: 2vw;
+        margin: 2% 0;
+        text-decoration: none;
+        letter-spacing: 3px;
+    }
+
+    .tellers section article:first-of-type h2 {
+        margin: 2% 0;
+    }
+
+    .tellers article p {
+        padding: 0 2%;
+        text-align: justify;
+        font-size: 1.7vw;
+        box-sizing: border-box;
+    }
+
+    #fortune-teller > section > section > article:nth-child(3) > p {
+        font-size: 1.6vw;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -874,6 +911,18 @@ main > section h1 {
 
     .menu ul {
         top: 7%;
+    }
+
+    .tellers p {
+        line-height: 22px;
+    }
+
+    .tellers section article h2 {
+        margin: 1% 0;
+    }
+
+    #fortune-teller > section > section > article:nth-child(3) > p {
+        line-height: 20px;
     }
 }
 
@@ -886,6 +935,43 @@ main > section h1 {
         left: 53%;
         top: 6%;
     }
+
+    #fortune-teller > h1 {
+        font-size:5vw;
+    }
+
+    .tellers .mag-nakov {
+        width: 80%;
+    }
+
+    .tellers .mag-nakov h1 {
+        font-size: 3.5vw;
+    }
+
+    .tellers .mag-nakov h2 {
+        font-size: 2.8vw;
+    }
+
+    .tellers .mag-nakov p {
+        font-size: 2vw;
+    }
+
+    .tellers section article {
+        width: 80%;
+    }
+
+    .tellers section article h1 {
+        font-size: 3.5vw;
+    }
+
+    .tellers section article h2 {
+        font-size: 2.6vw;
+    }
+
+    .tellers section article p {
+        font-size: 2vw !important;
+        line-height: 24px !important;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -895,6 +981,15 @@ main > section h1 {
 
     .menu ul {
         top: 5%;
+    }
+
+    .tellers section article p {
+        font-size: 2.2vw !important;
+        line-height: 22px !important;
+    }
+
+    #fortune-teller > section > section > article:nth-child(3) > p {
+        line-height: 20px !important;
     }
 }
 
@@ -909,6 +1004,38 @@ main > section h1 {
 
     .menu ul li {
         padding: 7px 0;
+    }
+
+    .tellers .mag-nakov {
+        width: 90%;
+    }
+
+    .tellers .mag-nakov h1 {
+        font-size: 6vw;
+    }
+
+    .tellers .mag-nakov h2 {
+        font-size: 3.2vw;
+    }
+
+    .tellers .mag-nakov p {
+        font-size: 2.5vw;
+    }
+
+    .tellers section article {
+        width: 90%;
+    }
+
+    .tellers section article h1 {
+        font-size: 6vw;
+    }
+
+    .tellers section article h2 {
+        font-size: 3.2vw;
+    }
+
+    .tellers section article p {
+        font-size: 2.5vw !important;
     }
 }
 
