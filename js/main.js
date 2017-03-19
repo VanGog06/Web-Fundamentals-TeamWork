@@ -103,8 +103,10 @@ function scrollAnimation() {
 }
 
 function loadNakovHead() {
-    $('.background').css({'animation': 'shake 1s cubic-bezier(.36, .07, .19, .97) both',
-                          'transform': 'translate3d(0, 0, 0)',
-                          'backface-visibility': 'hidden',
-                          'perspective': '100px'});
+    $('.main-header').load(function() {
+        $('.background').css({'animation': 'shake 1s cubic-bezier(.36, .07, .19, .97) both',
+            'transform': 'translate3d(0, 0, 0)',
+            'backface-visibility': 'hidden',
+            'perspective': '100px'});
+    });
 }
