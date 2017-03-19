@@ -618,11 +618,11 @@ main > section h1 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 
-    background: #a90329;
+    background: #f82722;
 }
 
 .mags > h4:hover {
-    background: #cc002c;
+    background: #B90108;
 }
 
 .mags > h4 > a {
@@ -682,11 +682,11 @@ main > section h1 {
     border-radius: 80px;
     float: left;
     margin: 10px;
-    border: 1px solid gold;
+    border: 1px solid #B90108;
 }
 
 .mags > ul > li > button {
-    background-color: gold;
+    background-color: #f82722;
     border-radius: 5px;
     padding: 5px 20px;
     border: double indigo;
