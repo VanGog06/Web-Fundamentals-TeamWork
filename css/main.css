@@ -686,10 +686,16 @@ main > section h1 {
 }
 
 .mags > ul > li > button {
-    background-color: #f82722;
+    background-color: #B90108;
     border-radius: 5px;
     padding: 5px 20px;
     border: double indigo;
+}
+.mags > ul > li > button:hover {
+    width: 100px;
+    height: 50px;
+    background: #f82722;
+    font-size: 25px;
 }
 
 /*============ FOOTER ============*/
