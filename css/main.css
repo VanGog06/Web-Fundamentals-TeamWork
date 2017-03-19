@@ -19,22 +19,29 @@ body {
 
 /*============ HEADER ============*/
 
-/*.main-header .background {*/
-/*background: url('../img/fortune-nakov.png') no-repeat;*/
-/*background-size: contain;*/
-/*width: 100%;*/
-/*height: 0;*/
-/*padding-top: 66.6%;*/
-/*}*/
-
 .main-header {
+    position: relative;
     height: 735px;
-    background: url('../img/background.png') no-repeat;
+    background: url('../img/header/woman-background.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .main-header h1 {
     margin: 0;
+}
+
+.main-header .background {
+    background: url('../img/header/nakov-head.png') no-repeat;
+    background-size: 100% 100%;
+    height: 43%;
+    width: 36%;
+    position: absolute;
+    top: 55%;
+    left: 27%;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
 
 /** ======== Logo ======= **/
