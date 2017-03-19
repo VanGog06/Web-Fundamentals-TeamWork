@@ -65,9 +65,9 @@ function showHideTellersDescription() {
         let window_width = $(window).width();
 
         if (window_width > 1024) {
-            $(this).find('h2').toggle('slow');
-            $(this).find('p').toggle('slow');
-            $(this).find('img').toggleClass('toggle-opacity');
+            $(this).find('h2').stop().toggle('slow');
+            $(this).find('p').stop().toggle('slow');
+            $(this).find('img').stop().toggleClass('toggle-opacity');
         }
     });
 }
