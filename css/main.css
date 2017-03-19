@@ -195,6 +195,8 @@ main > section h1 {
 .tellers article h1 {
     margin-bottom: 0;
     padding: 20px 0;
+    font-size: 2.2vw;
+    text-decoration: underline;
 }
 
 .tellers .mag-nakov h1 {
@@ -210,9 +212,9 @@ main > section h1 {
 }
 
 .tellers .mag-nakov h2 {
-    font-size: 1.8em;
     margin: 2% 0 1% 0;
     letter-spacing: 4px;
+    font-size: 1.6vw;
 }
 
 .tellers .mag-nakov p {
@@ -223,7 +225,7 @@ main > section h1 {
     line-height: 21px;
     margin: 5px 0;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 
 .tellers section {
@@ -253,6 +255,8 @@ main > section h1 {
     margin: 4% 0 4% 0;
     letter-spacing: 4px;
     display: none;
+    font-size: 1.5vw;
+    text-decoration: underline;
 }
 
 .tellers section article:first-of-type h2 {
@@ -759,6 +763,7 @@ main > section h1 {
 
     .menu ul li a {
         font-size: 1.8vw;
+        text-shadow: 3px 3px #000;
     }
 
     .hamburger-menu {
