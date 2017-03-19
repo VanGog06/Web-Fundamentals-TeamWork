@@ -1,9 +1,3 @@
-/*
------- Color Reference -------
-background: #173e43
-heading: #fae596
-
-*/
 /*============ IMPORTS ============*/
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -15,7 +9,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.hamburger-menu{
+.hamburger-menu {
     display: none;
 }
 
@@ -26,11 +20,11 @@ body {
 /*============ HEADER ============*/
 
 /*.main-header .background {*/
-    /*background: url('../img/fortune-nakov.png') no-repeat;*/
-    /*background-size: contain;*/
-    /*width: 100%;*/
-    /*height: 0;*/
-    /*padding-top: 66.6%;*/
+/*background: url('../img/fortune-nakov.png') no-repeat;*/
+/*background-size: contain;*/
+/*width: 100%;*/
+/*height: 0;*/
+/*padding-top: 66.6%;*/
 /*}*/
 
 .main-header {
@@ -57,18 +51,22 @@ body {
     cursor: pointer;
     transition: all .3s ease;
 }
-.main-header .logo:hover{
+
+.main-header .logo:hover {
     opacity: .8;
 }
-.main-header .logo h1 img{
+
+.main-header .logo h1 img {
     height: 50px;
     float: left;
 }
-.main-header .logo h1{
+
+.main-header .logo h1 {
     font-size: 1.4em;
     text-transform: uppercase;
     line-height: 100px;
 }
+
 /** ======== Navigation ======= **/
 
 .menu {
@@ -115,10 +113,60 @@ main > section h1 {
 }
 
 /**============ HISTORY ============**/
-#history{
+#history {
     color: #173e43;
     background: #dddfd4;
+    font-size: 1.3rem;
+    padding: 40px 0;
 }
+
+.story {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.story p > span {
+    display: block;
+    margin: 10px 0 10px 20px;
+    font-weight: bolder;
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action h2 {
+    margin-bottom: 40px;
+}
+
+.call-to-action h2 span {
+    display: block;
+}
+
+.call-to-action .btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 35px 10px 35px;
+    border-radius: 20px;
+}
+
+.call-to-action .btn.sign-up {
+    background: #320107;
+}
+
+.call-to-action .btn.learn-more {
+    background: green;
+}
+
+@media screen and (max-width: 640px) {
+    .story{
+        width: 80%;
+    }
+    .call-to-action h2{
+        font-size: 1.1rem;
+    }
+}
+
 /**============ FORTUNE-TELLER ============**/
 
 #fortune-teller {
@@ -221,7 +269,7 @@ main > section h1 {
 
 .tellers .mag-nakov:hover,
 .tellers section article:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -232,10 +280,12 @@ main > section h1 {
 .zodiac {
     margin: 0 auto;
 }
-.zodiac>ul {
+
+.zodiac > ul {
     padding: 0;
 }
-.zodiac>ul>li {
+
+.zodiac > ul > li {
     list-style-type: none;
     width: 230px;
     display: inline-block;
@@ -246,138 +296,179 @@ main > section h1 {
     margin-top: 10px;
     margin-left: 30px;
 }
-.zodiac>ul>li>p {
+
+.zodiac > ul > li > p {
     font-size: small;
     padding: 10px;
 }
-.zodiac>ul>li h3 {
+
+.zodiac > ul > li h3 {
     font-size: 15px;
     color: lightslategrey;
 }
-.zodiac>ul>li>h2 {
+
+.zodiac > ul > li > h2 {
     padding: 0 10px;
     text-align: center;
 
 }
+
 .ai {
-    font-style:normal;
-    color:purple;
-    font-weight:bold;
-    font-size:24px;
-    line-height:24px;
+    font-style: normal;
+    color: purple;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
     float: left;
     padding: 10px;
 }
+
 .ai.aries:before {
-    content:"\2648";
+    content: "\2648";
 }
+
 .ai.taurus:before {
-    content:"\2649";
+    content: "\2649";
 }
+
 .ai.gemini:before {
-    content:"\264A";
+    content: "\264A";
 }
+
 .ai.cancer:before {
-    content:"\264B";
+    content: "\264B";
 }
+
 .ai.leo:before {
-    content:"\264C";
+    content: "\264C";
 }
+
 .ai.virgo:before {
-    content:"\264D";
+    content: "\264D";
 }
+
 .ai.libra:before {
-    content:"\264E";
+    content: "\264E";
 }
+
 .ai.scorpio:before {
-    content:"\264F";
+    content: "\264F";
 }
+
 .ai.sagittarius:before {
-    content:"\2650";
+    content: "\2650";
 }
+
 .ai.capricorn:before {
-    content:"\2651";
+    content: "\2651";
 }
+
 .ai.aquarius:before {
-    content:"\2652";
+    content: "\2652";
 }
+
 .ai.pisces:before {
-    content:"\2653";
+    content: "\2653";
 }
+
 .ai.sun:before {
-    content:"\2609";
+    content: "\2609";
 }
+
 .ai.moon:before {
-    content:"\263D";
+    content: "\263D";
 }
+
 .ai.earth:before {
-    content:"\2295";
+    content: "\2295";
 }
+
 .ai.mercury:before {
-    content:"\263F";
+    content: "\263F";
 }
+
 .ai.venus:before {
-    content:"\2640";
+    content: "\2640";
 }
+
 .ai.mars:before {
-    content:"\2642";
+    content: "\2642";
 }
+
 .ai.jupiter:before {
-    content:"\2643";
+    content: "\2643";
 }
+
 .ai.saturn:before {
-    content:"\2644";
+    content: "\2644";
 }
+
 .ai.uranus:before {
-    content:"\2645";
+    content: "\2645";
 }
+
 .ai.neptune:before {
-    content:"\2646";
+    content: "\2646";
 }
+
 .ai.pluto:before {
-    content:"\2647";
+    content: "\2647";
 }
+
 .ai.north-node:before {
-    content:"\260A";
+    content: "\260A";
 }
+
 .ai.south-node:before {
-    content:"\260B";
+    content: "\260B";
 }
+
 .ai.part-of-fortune:before {
-    content:"\2297"
+    content: "\2297"
 }
+
 .ai.ceres:before {
-    content:"\02A1"
+    content: "\02A1"
 }
+
 .ai.conjunction:before {
-    content:"\260C"
+    content: "\260C"
 }
+
 .ai.square:before {
-    content:"\25A1"
+    content: "\25A1"
 }
+
 .ai.trine:before {
-    content:"\25B3"
+    content: "\25B3"
 }
+
 .ai.opposition:before {
-    content:"\260D"
+    content: "\260D"
 }
+
 .ai.semisquare:before {
-    content:"\2220"
+    content: "\2220"
 }
+
 .ai.quintile:before {
-    content:"\0051"
+    content: "\0051"
 }
+
 .ai.biquintile:before {
-    content:"\0062\0051"
+    content: "\0062\0051"
 }
+
 .ai.retrograde:before {
-    content:"\211E"
+    content: "\211E"
 }
+
 .ai.comet:before {
-    content:"\2604"
+    content: "\2604"
 }
-@media screen and(max-width: 660px){
-    .zodiac>ul>li {
+
+@media screen and(max-width: 660px) {
+    .zodiac > ul > li {
         display: block;
     }
 }
@@ -388,11 +479,13 @@ main > section h1 {
     position: relative;
     background: #dddfd4;
 }
-#testimonials h1 small{
+
+#testimonials h1 small {
     display: block;
     font-size: .5em;
     margin-top: 5px;
 }
+
 .client-controls {
     position: absolute;
     width: 100%;
@@ -403,7 +496,7 @@ main > section h1 {
 }
 
 .client-controls a {
-    color: rgba(0,0,0,.6);
+    color: rgba(0, 0, 0, .6);
 }
 
 .client-controls .client-controls-next {
@@ -439,9 +532,11 @@ main > section h1 {
     z-index: 2;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .6);
 }
-.clients-carousel .client-unit .client-review{
+
+.clients-carousel .client-unit .client-review {
     width: 50%;
 }
+
 .clients-carousel .client-unit .client-profile {
     text-align: center;
     margin-right: 50px;
@@ -458,7 +553,7 @@ main > section h1 {
     margin-bottom: 10px;
 }
 
-.clients-carousel .client-unit .client-review p:first-line{
+.clients-carousel .client-unit .client-review p:first-line {
     font-weight: bold;
 }
 
@@ -467,12 +562,14 @@ main > section h1 {
 }
 
 @media screen and (max-width: 750px) {
-    #testimonials{
+    #testimonials {
         padding: 20px;
     }
-    .clients-carousel{
+
+    .clients-carousel {
         min-height: 450px;
     }
+
     .client-controls {
         position: relative;
     }
@@ -482,7 +579,8 @@ main > section h1 {
         left: 0;
         margin: 80px 0;
     }
-    .clients-carousel .client-unit .client-review{
+
+    .clients-carousel .client-unit .client-review {
         width: 100%;
     }
 
@@ -497,55 +595,60 @@ main > section h1 {
     line-height: 1.5;
     margin: 50px auto;
     width: 500px;
-    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-#contact>h1 {
+
+#contact > h1 {
     text-align: center;
 }
+
 .mags {
     background: #fff;
     width: 500px;
 }
-.mags>h4 {
-    font-family: 'Raleway',sans-serif;
+
+.mags > h4 {
+    font-family: 'Raleway', sans-serif;
     color: #fff;
     font-size: 15px;
     font-weight: 500;
     padding: 7px 12px;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 
     background: #a90329;
 }
-.mags>h4:hover {
+
+.mags > h4:hover {
     background: #cc002c;
 }
-.mags>h4>a {
+
+.mags > h4 > a {
     color: white;
     display: block;
     text-decoration: none;
     width: 200px;
 }
 
-.mags>ul {
+.mags > ul {
     background: #fff;
     font-size: 13px;
     line-height: 30px;
-    height: 0px;
+    height: 0;
     list-style-type: none;
     overflow: hidden;
-    padding: 0px;
+    padding: 0;
 
     /*Animation*/
     -webkit-transition: height 1s ease;
     -moz-transition: height 1s ease;
     -o-transition: height 1s ease;
-    -ms-transition: height 1s ease;
     transition: height 1s ease;
 }
-.mags:hover>ul {
+
+.mags:hover > ul {
     height: 150px;
 }
 
@@ -556,35 +659,41 @@ main > section h1 {
     display: block;
     width: 200px;
 }
+
 /*li Styles*/
-.mags>ul>li {
+.mags > ul > li {
     list-style-type: none;
     border-bottom: 1px solid #eee;
 }
-.mags>ul>li:hover {
+
+.mags > ul > li:hover {
     background: none;
 }
-.mags>ul>li>a {
+
+.mags > ul > li > a {
     text-decoration: none;
     color: black;
     display: block;
     width: 450px;
 }
-.mags>ul>li>a>img {
+
+.mags > ul > li > a > img {
     width: 20%;
     border-radius: 80px;
     float: left;
     margin: 10px;
     border: 1px solid gold;
 }
-.mags>ul>li>button {
+
+.mags > ul > li > button {
     background-color: gold;
     border-radius: 5px;
     padding: 5px 20px;
     border: double indigo;
 }
+
 /*============ FOOTER ============*/
-.main-footer{
+.main-footer {
     background: #f82722;
     color: white;
     padding: 10px 30px;
@@ -592,22 +701,27 @@ main > section h1 {
     align-items: center;
     justify-content: center;
 }
-.main-footer .footer-text{
+
+.main-footer .footer-text {
     font-size: 1.2em;
 }
-.main-footer .footer-social ul{
+
+.main-footer .footer-social ul {
     list-style: none;
 }
-.main-footer .footer-social ul li{
+
+.main-footer .footer-social ul li {
     display: inline-block;
     font-size: 1.5em;
     margin-right: 5px;
     cursor: pointer;
     transition: all .3s ease;
 }
-.main-footer .footer-social ul li:hover{
+
+.main-footer .footer-social ul li:hover {
     opacity: .6;
 }
+
 /*============ MEDIA QUERIES ============*/
 
 @media screen and (max-width: 1366px) {
