@@ -689,8 +689,8 @@ main > section h1 {
     background-color: #B90108;
     border-radius: 5px;
     padding: 5px 20px;
-    border: double indigo;
 }
+
 .mags > ul > li > button:hover {
     width: 100px;
     height: 50px;
