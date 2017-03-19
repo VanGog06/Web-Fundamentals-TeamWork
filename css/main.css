@@ -49,8 +49,8 @@ body {
     color: #878787;
     float: left;
     height: 80px;
-    width: 400px;
-    background: url('../img/logo.png');
+    width: 40%;
+    background: url("../img/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     text-indent: -9999px;

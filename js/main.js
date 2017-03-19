@@ -61,10 +61,10 @@ function hamburgerMenu() {
 }
 
 function showHideTellersDescription() {
-    $(".tellers section article").hover(function () {
-        $(this).find('h2').toggle('slow');
-        $(this).find('p').toggle('slow');
-        $(this).find('img').toggleClass('toggle-opacity');
+    $(".tellers section article").hover(function (event) {
+        $(this).find('h2').stop().toggle('slow');
+        $(this).find('p').stop().toggle('slow');
+        $(this).find('img').stop().toggleClass('toggle-opacity');
     });
 }
 
