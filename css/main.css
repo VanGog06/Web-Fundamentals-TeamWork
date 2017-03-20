@@ -7,15 +7,6 @@
 body {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
-    min-width: 500px;
-}
-
-html, body {
-    overflow-x: hidden;
-}
-
-body {
-    position: relative
 }
 
 .hamburger-menu {
@@ -121,7 +112,7 @@ body {
 main > section {
     background: navajowhite;
     min-height: 250px;
-    border-bottom: 1px solid saddlebrown;
+    border-bottom: 4px solid white;
 }
 
 main > section h1 {
@@ -396,24 +387,44 @@ main > section h1 {
 }
 
 /**============ HOROSCOPE ============**/
+#horoscope {
+    background: #bababc;
+}
+
 .zodiac {
     margin: 0 auto;
+    text-align: center;
+    background: #eeeeee;
 }
 
 .zodiac > ul {
     padding: 0;
+    background: #bababc;
+    border-top: 4px solid white;
 }
 
 .zodiac > ul > li {
+    box-sizing: border-box;
+    background: white;
     list-style-type: none;
     width: 230px;
     display: inline-block;
-    height: 250px;
+    height: 260px;
     vertical-align: top;
     box-shadow: 3px 5px 15px #888888;
     border-radius: 15px;
-    margin-top: 10px;
-    margin-left: 30px;
+    margin: 10px 0 5px 20px;
+    border: 5px solid #eeeeee;
+    transition: all .5s ease;
+}
+
+.zodiac > ul > li:hover{
+    background: #B90108;
+    color: white;
+    border-color: darkred;
+}
+.zodiac > ul > li:hover .zodiac > ul > li > h3{
+    color: darkred;
 }
 
 .zodiac > ul > li > p {
