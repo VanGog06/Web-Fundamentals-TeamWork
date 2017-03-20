@@ -7,6 +7,15 @@
 body {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
+    min-width: 500px;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative
 }
 
 .hamburger-menu {
@@ -42,6 +51,12 @@ body {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
+}
+
+@supports (-ms-ime-align:auto) {
+    .main-header .background {
+        left: 40%;
+    }
 }
 
 /** ======== Logo ======= **/
