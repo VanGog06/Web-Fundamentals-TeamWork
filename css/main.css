@@ -58,7 +58,7 @@ body {
     color: #878787;
     float: left;
     height: 80px;
-    width: 400px;
+    width: 40%;
     background: url('../img/logo.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -167,13 +167,15 @@ main > section h1 {
     border: 5px solid darkgray;
     z-index: 1;
 }
-.story-img .overlay{
+
+.story-img .overlay {
     opacity: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6);
     transition: all .5s ease;
 }
+
 .story-img:hover .overlay {
     opacity: 1;
 }
@@ -199,7 +201,7 @@ main > section h1 {
     position: relative;
 }
 
-.call-to-action{
+.call-to-action {
     text-align: center;
 }
 
@@ -207,16 +209,19 @@ main > section h1 {
     margin-bottom: 40px;
     font-size: 1.3rem;
 }
-.call-to-action h2 span{
+
+.call-to-action h2 span {
     display: block;
 }
-.call-to-action .btn{
+
+.call-to-action .btn {
     text-decoration: none;
     color: white;
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
     transition: all .5s ease;
 }
+
 .call-to-action .btn.sign-up {
     background: #980107;
     box-shadow: 2px 2px 0 #320107;
@@ -704,11 +709,16 @@ main > section h1 {
 }
 
 /**============ CONTACT ============**/
-
 #contact {
+    background: #eee;
+}
+
+#contact .inner {
+    background: navajowhite;
+    padding: 10px;
     line-height: 1.5;
     margin: 50px auto;
-    width: 500px;
+    max-width: 500px;
     -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -720,7 +730,7 @@ main > section h1 {
 
 .mags {
     background: #fff;
-    width: 500px;
+    max-width: 500px;
 }
 
 .mags > h4 {
@@ -749,11 +759,12 @@ main > section h1 {
 .mags > ul {
     background: #fff;
     font-size: 13px;
-    line-height: 30px;
+    line-height: 2.5em;
     height: 0;
     list-style-type: none;
     overflow: hidden;
     padding: 0;
+    width: 90%;
 
     /*Animation*/
     -webkit-transition: height 1s ease;
@@ -788,7 +799,7 @@ main > section h1 {
     text-decoration: none;
     color: black;
     display: block;
-    width: 450px;
+    width: 100%;
 }
 
 .mags > ul > li > a > img {
@@ -843,9 +854,19 @@ main > section h1 {
     opacity: .6;
 }
 
+@media screen and (max-width: 640px) {
+    #contact {
+        padding: 20px;
+    }
+
+    .mags > ul {
+        line-height: 1.2em;
+    }
+}
+
 /*============ MEDIA QUERIES ============*/
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1365px) {
     .main-header {
         position: relative;
     }
@@ -882,7 +903,7 @@ main > section h1 {
         top: 4%;
         left: 92%;
         color: #fff;
-        font-size: 3vw;
+        font-size: 2em;
     }
 
     .hamburger-menu:hover {
@@ -1074,11 +1095,15 @@ main > section h1 {
     }
 
     .menu ul {
-        top: 5%;
+        top: 10%;
     }
 
     .menu ul li {
         padding: 7px 0;
+    }
+
+    .menu ul li a {
+        font-size: 1.2em;
     }
 
     .tellers .mag-nakov {
@@ -1121,7 +1146,7 @@ main > section h1 {
 
     .menu ul {
         left: 50%;
-        top: 4%;
+        top: 10%;
     }
 
     .menu ul li {
