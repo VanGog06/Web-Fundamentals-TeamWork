@@ -53,12 +53,6 @@ body {
     perspective: 1000px;
 }
 
-@supports (-ms-ime-align:auto) {
-    .main-header .background {
-        left: 40%;
-    }
-}
-
 /** ======== Logo ======= **/
 .main-header .logo {
     color: #878787;
