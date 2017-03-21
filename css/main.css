@@ -865,7 +865,7 @@ main > section h1 {
 
 /*============ FOOTER ============*/
 .main-footer {
-    background: #f82722;
+    background: #B90108;
     color: white;
     padding: 10px 30px;
     display: flex;
@@ -873,20 +873,24 @@ main > section h1 {
     justify-content: center;
 }
 
-.main-footer .footer-text {
+.footer-text {
     font-size: 1.2em;
 }
 
-.main-footer .footer-social ul {
+.footer-social ul {
     list-style: none;
 }
 
-.main-footer .footer-social ul li {
+.footer-social ul li {
     display: inline-block;
     font-size: 1.5em;
     margin-right: 5px;
     cursor: pointer;
     transition: all .3s ease;
+}
+
+.footer-social ul li a{
+    color: white;
 }
 
 .main-footer .footer-social ul li:hover {
