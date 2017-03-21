@@ -164,7 +164,6 @@ main > section h1 {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .6);
-    transition: all .5s ease;
 }
 
 .story-img:hover .overlay {
@@ -605,9 +604,11 @@ main > section h1 {
     background: url("../img/testimonials-bg.png");
     background-attachment: fixed;
 }
-#testimonials h1{
+
+#testimonials h1 {
     text-shadow: 5px 5px 5px white;
 }
+
 #testimonials h1 small {
     display: block;
     font-size: .5em;
@@ -630,7 +631,7 @@ main > section h1 {
     transition: all .5s ease;
 }
 
-.client-controls a:hover{
+.client-controls a:hover {
     opacity: .7;
     color: #B90108;
 }
@@ -750,13 +751,52 @@ main > section h1 {
 /**============ CONTACT ============**/
 #contact {
     background: #eee;
+    padding-bottom: 20px;
+}
+
+#contact h1 {
+    margin-bottom: 20px;
 }
 
 #contact .inner {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    box-sizing: border-box;
+    background: white;
+    padding: 20px;
+    margin-right: 20px;
+    width: 500px;
+    position: relative;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .6);
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    box-sizing: border-box;
+    display: block;
+    padding: 8px;
+    border: 2px solid darkgray;
+    margin: 10px 0 10px 0;
+    width: 100%;
+}
+.contact-form input[type=submit]{
+    transition: all .5s ease;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.contact-form input[type=submit]:hover{
+    background: #B90108;
+    color: white;
+    border-color: darkred;
+}
+
+#contact .mags-section {
     background: navajowhite;
     padding: 10px;
     line-height: 1.5;
-    margin: 50px auto;
     max-width: 500px;
     -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -863,6 +903,24 @@ main > section h1 {
     font-size: 25px;
 }
 
+@media screen and (max-width: 960px) {
+    #contact .inner {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        max-width: 500px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+
 /*============ FOOTER ============*/
 .main-footer {
     background: #B90108;
@@ -889,7 +947,7 @@ main > section h1 {
     transition: all .3s ease;
 }
 
-.footer-social ul li a{
+.footer-social ul li a {
     color: white;
 }
 
