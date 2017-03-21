@@ -21,9 +21,11 @@ function smoothScroll() {
         }
     });
 
-    $("a[href='#top']").click(function(event) {
+    $("a#scroll-top").click(function(event) {
         event.preventDefault();
+
         $("html, body").animate({ scrollTop: 0 }, 1500);
+        window.location.hash = "";
         return false;
     });
 
