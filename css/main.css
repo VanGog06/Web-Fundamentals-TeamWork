@@ -598,12 +598,6 @@ main > section h1 {
     content: "\2604"
 }
 
-@media screen and(max-width: 660px) {
-    .zodiac > ul > li {
-        display: block;
-    }
-}
-
 /**============ TESTIMONIALS ============**/
 
 #testimonials {
